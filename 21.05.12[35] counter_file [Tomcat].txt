@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page import = "java.io.*" %>
+    <jsp:useBean id="cnt" scope="application" class = "MyEcho.counter"/>
+    //파일 처리
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>counter_file</title>
+</head>
+<body>
+	<%
+	int count = 0;
+	session = request.getSession();
+	session.setMaxInactiveInterval(1);
+	String first = (String)session.getAttribute("checkfirst");
+	
+	String count_file = "c:/jsp/count.txt";
+	if(cnt.getCount() == 0){
+		int j = 0;
+		String old = null;
+		File infile = new File(count_file);
+		try{
+			if(infile.exists()){
+				BufferedReader input = new BufferedReader(new FileReader(infile));
+				if((old = input.readLine())!=null){
+					int i = Integer.parseInt(old);
+					cnt.setCount(i);
+					input.close();
+				}
+			}
+		}catch(IOException e){
+			out.println(e.getMessage());
+		}
+	}
+	
+	if(first != null){
+		count = cnt.getCount();
+	}else{
+		cnt.setCount();
+		count = cnt.getCount();
+		session.setAttribute("checkfirst", "first");
+	}
+	
+	if(count % 10 == 0){
+		try{
+			count_file = "C:/jsp/count.txt";
+			PrintWriter pw = new PrintWriter(new FileWriter(count_file));
+			pw.println(count);
+			pw.close();
+		}catch(IOException e){
+			out.println(e.getMessage());
+		}
+	}
+	out.println("현재까지 방문자 수 : "+count);
+	%>
+</body>
+</html>
