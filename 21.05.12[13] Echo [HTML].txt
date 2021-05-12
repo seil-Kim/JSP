@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echo</title>
+</head>
+<body>
+	<form Action = "echo.jsp" Method = "post">
+	서버로 전송할 값 : <Input type = "Text" Name = "msg">
+	<Input Type = "Submit" Value = "전송">
+	<Input Type = "Reset" Value = "취소">
+	</form>
+</body>
+</html>
