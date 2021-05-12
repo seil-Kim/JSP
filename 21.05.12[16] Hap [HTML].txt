@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hap</title>
+</head>
+<body>
+	<form Action = "hap.jsp" Method = "post">
+	누적할 최종값 : <Input Type = "Text" Name = "no">
+	<Input Type = "Submit" Value = "전송">
+	<Input Type = "Reset" Value = "취소">
+	</form>
+</body>
+</html>
