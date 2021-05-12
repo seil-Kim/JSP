@@ -1,0 +1,28 @@
+package MyEcho;
+
+public class Num {
+	int no;
+	int sum = 0;
+	
+	public Num() {}
+	
+		public int getNo() {
+			return no;
+		}
+
+		public void setNo(int no) {
+			this.no = no;
+		}
+
+		public int getSum() {
+			return sum;
+		}
+
+		public void setSum() {
+			int sum = 0;
+			for(int i=1; i<=no;i++) {
+				sum += i;
+			}
+			this.sum = sum;
+		}
+}
