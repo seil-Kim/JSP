@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>httpServletResponse</title>
+</head>
+<body>
+	<form action = "site.jsp" method = "post">
+		이동할 사이트 주소 : <input type = "text" name = "site">
+	<input type = "submit" value = "전송">
+	<input type = "reset" value = "취소">
+	</form>
+</body>
+</html>
