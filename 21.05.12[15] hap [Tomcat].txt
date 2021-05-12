@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>hap</title>
+</head>
+<body>
+	<% request.setCharacterEncoding("utf-8"); %>
+	<jsp:useBean id = "num" class = "MyEcho.Num"/>
+	<jsp:setProperty name = "num" property = "*"/>
+	<%num.setSum(); %>
+	<pre>
+	1부터 <%=num.getNo() %> 까지의 누적된 합 : <%=num.getSum() %>
+	</pre>
+</body>
+</html>
