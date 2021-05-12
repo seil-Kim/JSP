@@ -1,0 +1,35 @@
+package MyEcho;
+
+public class counter {
+	private int count;
+	public counter() {
+		count = 0;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount() {
+		count += 1;
+	}
+}
+
+
+----------------------------------------
+
+package MyEcho;
+
+public class counter {
+	private int count;
+	public counter() {
+		count = 0;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount() {
+		count += 1;
+	}
+	public void setCount(int cnt) {
+		count = cnt;
+	}
+}
