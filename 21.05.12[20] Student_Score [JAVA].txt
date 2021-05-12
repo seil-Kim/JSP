@@ -1,0 +1,69 @@
+package MyEcho;
+
+public class Student_Score {
+	int no, kor, eng, mat; 
+	int sum = 0, avg = 0;
+	String name;
+	
+	public Student_Score() {}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getNo() {
+		return no;
+	}
+
+	public void setNo(int no) {
+		this.no = no;
+	}
+
+	public int getKor() {
+		return kor;
+	}
+
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+
+	public int getMat() {
+		return mat;
+	}
+
+	public void setMat(int mat) {
+		this.mat = mat;
+	}
+
+	public int getSum() {
+		return sum;
+	}
+
+	public void setSum() {
+		int sum = kor + eng + mat;
+		
+		this.sum = sum;
+	}
+
+	public int getAvg() {
+		return avg;
+	}
+
+	public void setAvg() {
+		int avg = (kor + eng + mat)/3;
+		
+		this.avg = avg;
+	}
+}
