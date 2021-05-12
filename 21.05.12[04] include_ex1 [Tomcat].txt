@@ -1,0 +1,22 @@
+[String comment]
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>include_ex1</title>
+</head>
+<body>
+	<%
+	request.setCharacterEncoding("utf-8");
+	out.print("include 호출 전입니다. <br>");
+	String str = "include_ex1";
+	%>
+	<%@ include file="include_ex2.jsp" %>
+	<%
+	out.print("include 호출 후입니다. <br>");
+	%>
+</body>
+</html>
