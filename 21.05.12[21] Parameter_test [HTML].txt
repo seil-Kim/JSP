@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parameter_test</title>
+</head>
+<body>
+	<form method = "post" action = "getParameterNames.jsp">
+		이름 : <input type = "text" name = "이름"><p>
+		성별 : <input type = "text" name = "성별"><p>
+		나이 : <input type = "text" name = "나이"><p>
+		생일 : <input type = "text" name = "생일"><p>
+		<input type = "submit" value = "전송"><p>
+	</form>
+</body>
+</html>
