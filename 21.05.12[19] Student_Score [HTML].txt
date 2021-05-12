@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3> ** 성적 입력 **</h3>
+	<form Action = "score.jsp" Method = "post">
+	번호 : <Input Type = "Text" Name = "no"><br>
+	이름 : <Input Type = "Text" Name = "name"><br>
+	국어 : <Input Type = "Text" Name = "kor"><br>
+	영어 : <Input Type = "Text" Name = "eng"><br>
+	수학 : <Input Type = "Text" Name = "mat"><br>
+	<Input Type = "Submit" Value = "전송">
+	<Input Type = "Reset" Value = "취소">
+	</form>
+</body>
+</html>
