@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>session</title>
+</head>
+<body>
+	<form action = "session.jsp" method = "post">
+	 사용자명 : <input type = "text" name = "id"><br>
+	 비밀번호 : <input type = "password" name = "passwd"><br>
+	<input type = "submit" value = "전송">
+	<input type = "reset" value = "취소">
+	</form>
+</body>
+</html>
